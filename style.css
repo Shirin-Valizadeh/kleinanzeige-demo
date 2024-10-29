@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+header{
+    width: 100%;
+    height: auto;
+    padding: 15px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header .header-left div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+}
+
+header .header-left div h3{
+    font-size: 1.5rem;
+    color: #dc3545;
+}
+
+header .header-left div > div{
+    border: 1px solid #ccc;
+    padding: 7px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+header .header-left div>div:hover{
+    background: #eee;
+}
+
+header .header-left div>div span{
+    font-size: 20px;
+    color: #555;
+    padding: 0 5px;
+
+}
+
+header .header-left a{
+    background-color: #dc3545;
+    color: #eee;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: 0.5s;
+    margin:0 15px ;
+}
+
+header .header-left a:hover{
+    background-color: #bb2533;
+}
+
+header .header-right ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-right ul li{
+    margin: 10px;
+
+}
+
+header .header-right ul li:nth-last-child{
+    margin-left: 30px;
+}
+
+header .header-right ul li a{
+    color: #262626;
+    font-size: 0.9rem;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+section .sidebar{
+    width: 25%;
+    height: 100%;
+}
+
+section .main{
+    width: 75%;
+    height: 100%;
+    padding: 35px;
+}
+
+section .sidebar>h3{
+    padding: 25px;
+}
+
+section .sidebar ul{
+    padding: 0 25px;
+
+}
+
+section .sidebar ul li{
+    padding: 15px 5px;
+    transition: 0.2s;
+}
+
+section .sidebar ul li:hover{
+    background: #eee;
+}
+section .sidebar ul li span{
+    padding-right: 15px;
+    font-size: 20px;
+    color: #777;
+
+}
+
+section .sidebar ul li a{
+    color: #777;
+}
+
+section .main .search{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+section .main .search > div {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 17px 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+section .main .search .fa{
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+
+section .main .search input{
+    width: 50%;
+    padding: 19px;
+    border: 2px solid #ccc;
+    border-left: none;
+    color: #262626;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px ;
+    outline: none;
+}
+
+
+
+section .main .cat{
+    margin: 20px 0;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+section .main .cat a{
+    border: 1px solid #b62432;
+    padding: 5px 13px;
+    margin: 8px;
+    border-radius: 30px;
+    color: #b62432;
+    transition: 0.3s;
+}
+
+section .main .cat a:hover{
+    background: #b62432;
+    color: white;
+}
+
+section .main .location{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+section .main .location p{
+    color: #555;
+
+}
+
+section .main hr{
+    color: #ddd;
+    margin: 10px 0;
+}
+
+section .main .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+section .main .boxes .box{
+    width: calc(33.3333% - 20px);
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+}
+
+section .main .boxes .box>div {
+ 
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+section .main .boxes .box>div .info{
+    width: 50%;
+    font-size: 12px;
+    color: #333;
+    flex-direction: column;
+    height: 100%;
+}
+
+section .main .boxes .box>div .img_box{
+    width: 50%;
+    height: 100%;
+}
+
+section .main .boxes .box>div .img_box img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.loader{
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loader .load{
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 4px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border-right:4px solid transparent ;
+    margin: 10px;
+    animation: anim 2s linear infinite;
+}
+
+@keyframes anim{
+    0%{
+        transform: rotate(0grad);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
