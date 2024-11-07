@@ -133,6 +133,42 @@ section .sidebar ul li a{
     color: #777;
 }
 
+section .sidebar .footer>div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+section .sidebar .footer>div a{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding:5px 12px;
+    color: #333;
+    font-size: 1rem;
+    margin: 5px;
+    transition: 0.5s;
+}
+section .sidebar .footer>div a:hover{
+    background: #eee;
+}
+
+section .sidebar .footer .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section .sidebar .footer .social span{
+    margin: 0 15px;
+    color: #555;
+    font-size: 20px;
+
+}
+
+
 section .main .search{
     display: flex;
     justify-content: left;
